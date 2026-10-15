@@ -1,0 +1,18 @@
+LANDING EDAI TECH - archivos para pegar en el repositorio "EDAI"
+
+Copia cada carpeta en la raíz de tu proyecto Next.js (reemplaza si ya existen):
+
+  components/LandingEdai.tsx   -> el componente completo de la landing (estilos incluidos)
+  app/page.tsx                 -> la página de inicio que muestra la landing
+  public/casos/*.jpg           -> las 18 fotos de los casos (Aura, Lúmina, FerroPro, Bocado, Chavela)
+
+Notas:
+- Si tu proyecto usa la carpeta src/, ponlos en src/components y src/app.
+  La carpeta public/ siempre va en la raíz.
+- app/page.tsx importa "@/components/LandingEdai". Si tu proyecto no tiene ese alias,
+  cambia la línea por:  import LandingEdai from '../components/LandingEdai'
+- No necesita librerías extra, solo React y Next.js.
+- Datos de contacto (WhatsApp, correo, Instagram, Facebook): al inicio de LandingEdai.tsx.
+  Revisa el enlace de Facebook, que es un supuesto.
+
+Para probar:  npm run dev   y abre http://localhost:3000
