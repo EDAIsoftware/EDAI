@@ -1,27 +1,6 @@
-import { SiteHeader } from '@/components/site-header'
-import { Hero } from '@/components/hero'
-import { Services } from '@/components/services'
-import { DemosShowcase } from '@/components/demos-showcase'
-import { Packages } from '@/components/packages'
-import { About } from '@/components/about'
-import { Contact } from '@/components/contact'
-import { SiteFooter } from '@/components/site-footer'
-import { WhatsAppFloat } from '@/components/whatsapp-float'
+import { redirect } from 'next/navigation'
 
-export default function Home() {
-  return (
-    <>
-      <SiteHeader />
-      <main>
-        <Hero />
-        <Services />
-        <DemosShowcase />
-        <Packages />
-        <About />
-        <Contact />
-      </main>
-      <SiteFooter />
-      <WhatsAppFloat />
-    </>
-  )
+// La raíz del proyecto no tiene contenido propio: tu página de ventas vive en www.edaisoftware.com
+export default function Inicio() {
+  redirect('/login')
 }
